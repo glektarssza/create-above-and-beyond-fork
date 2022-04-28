@@ -26,6 +26,7 @@ let PR_T = (id, x) => MOD("projectred-transmission", id, x)
 let PR_I = (id, x) => MOD("projectred-illumination", id, x)
 let RQ = (id, x) => MOD("xreliquary", id, x)
 let SD = (id, x) => MOD("storagedrawers", id, x)
+let FSD = (id, x) => MOD("framedcompactdrawers", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
 let AC = (id, x) => MOD("aquaculture", id, x)
@@ -1171,8 +1172,28 @@ function drawersop(event) {
 			event.stonecutting(full, trim)
             event.stonecutting(Item.of(half, 2), trim)
 		})
-	})
+    })
+    let framed_sizes = ['one', 'two', 'four']
+    framed_sizes.forEach(size => {
+        let trim = FSD(`framed_trim`)
+        event.remove({ id: trim })
+        event.shaped(Item.of(trim, 4), [
+            'SSS',
+            'PMP',
+            'SSS'
+        ], {
+            P: CR('zinc_ingot'),
+			M: '#forge:chests/wooden',
+			S: '#forge:rods/wooden'
+        })
+        event.stonecutting(SD("upgrade_template"), trim)
 
+        let full = FSD(`framed_full_${size}`)
+        let half = FSD(`framed_half_${size}`)
+
+        event.stonecutting(full, trim)
+        event.stonecutting(Item.of(half, 2), trim)
+    })
 }
 
 function unify(event) {

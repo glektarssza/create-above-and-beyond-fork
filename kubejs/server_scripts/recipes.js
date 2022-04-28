@@ -192,7 +192,6 @@ onEvent('item.tags', event => {
 		.add("portality:generator")
 		.add("kubejs:alchemical_laser")
 		.add("kubejs:ponder_laser_lamp")
-		.add("chiselsandbits:block_bit")
 		.add("moreminecarts:chunk_loader")
 		.add("moreminecarts:minecart_with_chunk_loader")
 		.add("chunknogobyebye:loader")

@@ -2847,7 +2847,3 @@ events.listen('player.chat', function (event) {
 		event.cancel()
 	}
 })
-
-
-
-

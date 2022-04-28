@@ -125,13 +125,13 @@
 
 [Client]
 	#If true, AR will use a custom skybox on planets
-	PlanetSkyOverride = true
+	PlanetSkyOverride = false
 	#Advanced visual effects
 	advancedVFX = true
 	#If UI is not locked, the middle mouse can be used to drag certain AR UIs around the screen, positions are saved on hitting quit in the menu
 	lockUI = true
 	#If true, AR will use a custom skybox on space stations
-	StationSkyOverride = true
+	StationSkyOverride = false
 	#If true, allows players to experience nausea on non-standard atmosphere types
 	EnableAtmosphericNausea = true
 

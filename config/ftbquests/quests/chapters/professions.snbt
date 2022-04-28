@@ -956,24 +956,6 @@
 					count: 8L
 				}
 				{
-					id: "07105FD32CC3CB86"
-					type: "item"
-					item: "darkerdepths:aridrock"
-					count: 8L
-				}
-				{
-					id: "5246009651F94D74"
-					type: "item"
-					item: "darkerdepths:grimestone"
-					count: 8L
-				}
-				{
-					id: "4A4F88C99DB35EF3"
-					type: "item"
-					item: "darkerdepths:shale"
-					count: 8L
-				}
-				{
 					id: "731A6B9678CE71D8"
 					type: "item"
 					item: "forbidden_arcanus:darkstone"

@@ -211,7 +211,7 @@
 		gen_block_packed_ice = false
 		#
 		#Generate Broken Stone
-		gen_block_brokenstone = true
+		gen_block_brokenstone = false
 		#
 		#Generate Sediment Stone
 		gen_block_sedimentstone = false
@@ -268,4 +268,3 @@
 	#Healing items cooldown in seconds (default=5)
 	#Range: 1 ~ 30
 	item_medecine_cooldown = 5
-

@@ -1,25 +1,44 @@
-.mixin.out/**
-crash-reports/**
-logs/**
-mods/**
-natives/**
-paintings/**
-palettes/**
-local/**
-patchouli_books/**
-resourcepacks/**
-saves/**
-schematics/**
-screenshots/**
-themes/**
+# Editors #
+## Visual Studio Code ##
+### Workspace Folder ###
+.vscode/*
+
+### Exceptions ###
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Logs #
+*.log*
+
+# Minecraft #
+## Mods ##
+mods/
+
+## Client Files ##
+.mixin.out/
+crash-reports/
+logs/
+natives/
+patchouli_books/
+patchouli_data.json
+
+## User Files ##
+paintings/
+local/
+resourcepacks/
+saves/
+screenshots/
+shaderpacks/
+schematics/
 config.json
 hotbar.nbt
 knownkeys.txt
-optionsof.txt
-optionsshaders.txt
-patchouli_data.json
+options*.txt
 reauth.toml
-servers.dat
-servers.dat_old
+servers.dat*
 usercache.json
 usernamecache.json
+
+## Misc. ##
+themes/

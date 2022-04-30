@@ -24,6 +24,7 @@ patchouli_books/
 patchouli_data.json
 
 ## User Files ##
+backups/
 paintings/
 local/
 resourcepacks/

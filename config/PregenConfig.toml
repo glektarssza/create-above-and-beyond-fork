@@ -4,8 +4,6 @@
 	"Disable ChunkSyncOverride" = false
 	#Defines if the Profiler should run in the background or not
 	enable-profiler = false
-	#Changes the World Generator to process Multiple chunks at the same time (Multithreading) to use more resources if present, may cause crashes with mods
-	Multithread-Hack = false
 	#Defines how many milliseconds the Chunk Deleter gets per tick
 	#Range: 1 ~ 1000
 	"Deletion Time" = 10
@@ -19,6 +17,12 @@
 	#Defines how many Players have to be online for the Processor to Auto Pause, -1 = Disabled. It is Inclusive 2 = Allows 1 Player
 	#Range: > -1
 	"Player Limit" = -1
+	#Defines if each world should use multiple threads to generate. This feature can improve worldgen speed drastically, but deadlocks can happen with it too.
+	#If deadlock issues happen, like the worldgen stops randomly, disabling this might fix it for you at the slight slowdown in worldgen
+	#If the config is changed the pregeneration needs to be restarted
+	"Multithreaded WorldGen" = true
+	#Override increases the Watchdog Kill switch to a minimum of 10 minutes instead of 60 seconds. Because Heavy modpacks cause spikes that can last 60 seconds during pregen and saving, this just reduces crashes by minecraft itself and leaves the killswitch
+	"Disable Watchdog Override" = false
 
 [client]
 

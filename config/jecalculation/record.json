@@ -3,7 +3,7 @@
         "mode": "input",
         "amount": "",
         "recents": [],
-        "inventory": 0
+        "inventory": 0b
     },
     "math": {
         "current": "",

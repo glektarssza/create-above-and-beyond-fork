@@ -24,6 +24,12 @@ patchouli_books/
 patchouli_data.json
 Xaero*/
 tconplanner/
+config/sodium-*
+config/dynamic_lights_reforged.toml
+config/magnesium_extras.toml
+config/xaerominimap.txt
+config/xaeropatreon.txt
+config/xaeroworldmap.txt
 
 ## User Files ##
 backups/

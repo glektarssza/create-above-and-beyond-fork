@@ -75,8 +75,8 @@ body:
       label: Optifine
       description: Are you using Optifine?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
   - type: textarea

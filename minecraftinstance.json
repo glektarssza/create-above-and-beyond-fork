@@ -14051,15 +14051,15 @@
         },
         {
             "addonID": 532724,
-            "gameInstanceID": "9b8b2edc-eb11-47a2-9845-bb1ef50aa3a3",
+            "gameInstanceID": "cbc0413b-6566-4b95-b54d-da522bc6e298",
             "installedFile": {
-                "id": 3528352,
-                "fileName": "magnesium-1.6-pupil.jar",
-                "fileDate": "2021-11-17T06:17:29.853Z",
-                "fileLength": 541862,
-                "releaseType": 3,
+                "id": 3526076,
+                "fileName": "magnesium-1.5.jar",
+                "fileDate": "2021-11-14T21:18:06.113Z",
+                "fileLength": 541088,
+                "releaseType": 1,
                 "fileStatus": 4,
-                "downloadUrl": "https://edge.forgecdn.net/files/3528/352/magnesium-1.6-pupil.jar",
+                "downloadUrl": "https://edge.forgecdn.net/files/3526/76/magnesium-1.5.jar",
                 "isAlternate": false,
                 "alternateFileId": 0,
                 "dependencies": [],
@@ -14067,22 +14067,52 @@
                 "modules": [
                     {
                         "foldername": "META-INF",
-                        "fingerprint": 3976282884,
+                        "fingerprint": 1818385055,
                         "invalidFingerprint": false
                     },
                     {
                         "foldername": "me",
-                        "fingerprint": 982752287,
+                        "fingerprint": 690994544,
                         "invalidFingerprint": false
                     },
                     {
                         "foldername": "assets",
-                        "fingerprint": 970186348,
+                        "fingerprint": 1400131260,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "iris-batched-entity-rendering.mixins.json",
+                        "fingerprint": 1203999764,
                         "invalidFingerprint": false
                     },
                     {
                         "foldername": "magnesium.mixins.json",
                         "fingerprint": 2585353584,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.bettermipmaps.json",
+                        "fingerprint": 2968451171,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.fantastic.json",
+                        "fingerprint": 1637905992,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.vertexformat.json",
+                        "fingerprint": 2363811309,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.yeetphysicsmod.json",
+                        "fingerprint": 4004089230,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.pupil.json",
+                        "fingerprint": 2979317835,
                         "invalidFingerprint": false
                     },
                     {
@@ -14101,7 +14131,7 @@
                         "invalidFingerprint": false
                     }
                 ],
-                "packageFingerprint": 321698565,
+                "packageFingerprint": 2419099626,
                 "gameVersion": [
                     "1.16.5",
                     "Forge"
@@ -14119,15 +14149,15 @@
                     }
                 ],
                 "hasInstallScript": false,
-                "isCompatibleWithClient": false,
-                "restrictProjectFileAccess": 0,
+                "isCompatibleWithClient": true,
+                "restrictProjectFileAccess": 1,
                 "projectStatus": 4,
                 "projectId": 532724,
-                "FileNameOnDisk": "magnesium-1.6-pupil.jar"
+                "FileNameOnDisk": "magnesium-1.5.jar"
             },
-            "dateInstalled": "2022-04-28T16:43:02.2933453Z",
-            "dateUpdated": "2022-05-01T19:01:57.9351905Z",
-            "dateLastUpdateAttempted": "2022-05-01T19:01:57.9351905Z",
+            "dateInstalled": "2022-05-02T08:05:05.2062847Z",
+            "dateUpdated": "2022-05-02T08:05:05.20929Z",
+            "dateLastUpdateAttempted": "2022-05-02T08:05:05.20929Z",
             "status": 4,
             "installSource": 0,
             "preferenceAutoInstallUpdates": null,
@@ -14137,13 +14167,13 @@
             "isWorkingCopy": false,
             "isFuzzyMatch": false,
             "latestFile": {
-                "id": 3528352,
-                "fileName": "magnesium-1.6-pupil.jar",
-                "fileDate": "2021-11-17T06:17:29.853Z",
-                "fileLength": 541862,
-                "releaseType": 3,
+                "id": 3526076,
+                "fileName": "magnesium-1.5.jar",
+                "fileDate": "2021-11-14T21:18:06.113Z",
+                "fileLength": 541088,
+                "releaseType": 1,
                 "fileStatus": 4,
-                "downloadUrl": "https://edge.forgecdn.net/files/3528/352/magnesium-1.6-pupil.jar",
+                "downloadUrl": "https://edge.forgecdn.net/files/3526/76/magnesium-1.5.jar",
                 "isAlternate": false,
                 "alternateFileId": 0,
                 "dependencies": [],
@@ -14151,22 +14181,52 @@
                 "modules": [
                     {
                         "foldername": "META-INF",
-                        "fingerprint": 3976282884,
+                        "fingerprint": 1818385055,
                         "invalidFingerprint": false
                     },
                     {
                         "foldername": "me",
-                        "fingerprint": 982752287,
+                        "fingerprint": 690994544,
                         "invalidFingerprint": false
                     },
                     {
                         "foldername": "assets",
-                        "fingerprint": 970186348,
+                        "fingerprint": 1400131260,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "iris-batched-entity-rendering.mixins.json",
+                        "fingerprint": 1203999764,
                         "invalidFingerprint": false
                     },
                     {
                         "foldername": "magnesium.mixins.json",
                         "fingerprint": 2585353584,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.bettermipmaps.json",
+                        "fingerprint": 2968451171,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.fantastic.json",
+                        "fingerprint": 1637905992,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.vertexformat.json",
+                        "fingerprint": 2363811309,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.iris.yeetphysicsmod.json",
+                        "fingerprint": 4004089230,
+                        "invalidFingerprint": false
+                    },
+                    {
+                        "foldername": "mixins.pupil.json",
+                        "fingerprint": 2979317835,
                         "invalidFingerprint": false
                     },
                     {
@@ -14185,7 +14245,7 @@
                         "invalidFingerprint": false
                     }
                 ],
-                "packageFingerprint": 321698565,
+                "packageFingerprint": 2419099626,
                 "gameVersion": [
                     "1.16.5",
                     "Forge"
@@ -14203,11 +14263,11 @@
                     }
                 ],
                 "hasInstallScript": false,
-                "isCompatibleWithClient": false,
-                "restrictProjectFileAccess": 0,
+                "isCompatibleWithClient": true,
+                "restrictProjectFileAccess": 1,
                 "projectStatus": 4,
                 "projectId": 532724,
-                "FileNameOnDisk": "magnesium-1.6-pupil.jar"
+                "FileNameOnDisk": "magnesium-1.5.jar"
             },
             "preferenceReleaseType": null,
             "manifestName": null,

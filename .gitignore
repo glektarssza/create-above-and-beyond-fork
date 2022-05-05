@@ -30,6 +30,7 @@ config/magnesium_extras.toml
 config/xaerominimap.txt
 config/xaeropatreon.txt
 config/xaeroworldmap.txt
+config/jei/bookmarks.ini
 
 ## User Files ##
 backups/

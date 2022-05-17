@@ -26,7 +26,7 @@
 
 [categories]
 	Automation = false
-	Building = false
+	Building = true
 	Management = true
 	Tools = false
 	Tweaks = true
@@ -111,25 +111,25 @@
 	"More Brick Types" = false
 	"More Potted Plants" = false
 	"More Stone Variants" = false
-	"Nether Brick Fence Gate" = false
+	"Nether Brick Fence Gate" = true
 	"Paper Decor" = false
 	"Quilted Wool" = false
 	Rope = false
 	"Shallow Dirt" = false
 	Shingles = false
 	"Soul Sandstone" = false
-	"Stained Planks" = false
+	"Stained Planks" = true
 	Stools = false
 	"Sturdy Stone" = false
 	"Tallow And Candles" = false
 	Thatch = false
 	"Tie Leads To Fences" = true
 	Turf = false
-	"Variant Bookshelves" = true
-	"Variant Chests" = true
-	"Variant Ladders" = true
-	"Vertical Planks" = true
-	"Vertical Slabs" = true
+	"Variant Bookshelves" = false
+	"Variant Chests" = false
+	"Variant Ladders" = false
+	"Vertical Planks" = false
+	"Vertical Slabs" = false
 	"Wooden Posts" = true
 
 	[building.celebratory_lamps]

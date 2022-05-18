@@ -31,6 +31,8 @@ config/xaerominimap.txt
 config/xaeropatreon.txt
 config/xaeroworldmap.txt
 config/jei/bookmarks.ini
+pregen/
+config/roadrunner/
 
 ## User Files ##
 backups/

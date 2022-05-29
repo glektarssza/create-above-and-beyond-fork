@@ -1192,6 +1192,8 @@ function drawersop(event) {
 
         event.stonecutting(full, trim)
         event.stonecutting(Item.of(half, 2), trim)
+        event.remove({ id: full })
+        event.remove({ id: half })
     })
 }
 

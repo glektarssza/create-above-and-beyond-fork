@@ -13,4 +13,3 @@ sunstoneSpreadChance = 0.35
 	enableWandererTrades = true
 	#AP adds Vertical Slabs to be compatible with Quark. Enabling this will force those to be available even if Quark isn't loaded.
 	verticalSlabsForced = false
-

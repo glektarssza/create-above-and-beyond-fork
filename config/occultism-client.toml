@@ -10,4 +10,3 @@
 [misc]
 	#Sync JEI search in storage actuator.
 	syncJeiSearch = false
-

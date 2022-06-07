@@ -18,4 +18,3 @@
 			count = 10
 			#The bigger the number the more likely it is to appear in the overworld. World gen tries more times to find a good spot to spawn the tree.
 			PlacementTries = 25
-

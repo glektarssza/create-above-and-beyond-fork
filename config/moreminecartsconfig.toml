@@ -16,4 +16,3 @@ lightspeed_rails_max_speed = 2.5
 #Sets the extra speed boost given by turbo rails. 0.06 is the default for regular powered rails.
 #Range: 0.0 ~ 1.0
 turbo_rails_max_speed = 0.2
-

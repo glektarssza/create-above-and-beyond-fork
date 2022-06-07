@@ -16,4 +16,3 @@
 	enableWaila = true
 	#Enable extended data display in The One Probe if present
 	enableTheOneProbe = true
-

@@ -12,6 +12,12 @@
 	"Threading Rule" = 2
 	#Defines if the pregenerator should automatically restart on server start. Automatically set to true when a task is running, and automatically set to false if no task is running
 	auto-restart = false
+	#Defines if each world should use multiple threads to generate. This feature can improve worldgen speed drastically, but deadlocks can happen with it too.
+	#If deadlock issues happen, like the worldgen stops randomly, disabling this might fix it for you at the slight slowdown in worldgen
+	#If the config is changed the pregeneration needs to be restarted
+	"Multithreaded WorldGen" = true
+	#Override increases the Watchdog Kill switch to a minimum of 10 minutes instead of 60 seconds. Because Heavy modpacks cause spikes that can last 60 seconds during pregen and saving, this just reduces crashes by minecraft itself and leaves the killswitch
+	"Disable Watchdog Override" = false
 	#Defines if the Improved Command Arguments should be used on Command Creation. If enabled mod is required on client
 	"Advanced Command Arguments" = true
 	#Defines how many Players have to be online for the Processor to Auto Pause, -1 = Disabled. It is Inclusive 2 = Allows 1 Player
@@ -69,4 +75,3 @@
 		large-hover = true
 		#If you need to refresh the Supporter info set this to true and on the next game restart it will automatically update the info.
 		update-supporters = false
-

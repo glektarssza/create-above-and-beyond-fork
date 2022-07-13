@@ -31,8 +31,6 @@ Requirements:
 6. Run `git fetch --all` to pull the files.
 7. Run `git checkout main` to check out the main branch.
 8. Run `git pull --ff-only` to grab the files.
-9. Run `setup.bat` on Windows or `setup.sh` on Linux/Mac to download mods.
-10. You are now ready to run the modpack!
 
 ## License ##
 

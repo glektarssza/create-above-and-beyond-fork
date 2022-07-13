@@ -43,6 +43,22 @@ saves/
 screenshots/
 shaderpacks/
 schematics/
+.mixin.out/**
+crash-reports/**
+logs/**
+mods/**
+natives/**
+paintings/**
+palettes/**
+local/**
+patchouli_books/**
+resourcepacks/**
+saves/**
+schematics/**
+screenshots/**
+themes/**
+backups/**
+test/**
 config.json
 hotbar.nbt
 knownkeys.txt
@@ -55,3 +71,5 @@ usernamecache.json
 ## Misc. ##
 themes/
 *.bak
+.curseclient
+minecraftinstance.json

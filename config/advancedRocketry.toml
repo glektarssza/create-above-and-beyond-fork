@@ -1,4 +1,3 @@
-
 [General]
 	#Maximum gravity the crystallizer can work at. 0 to disable!
 	crystalliserMaximumGravity = 0
@@ -61,16 +60,18 @@
 	OverrideGCAir = true
 	#Blocks that are not automatically detected as sealable but should seal.  Format "Mod:Blockname"  for example "minecraft:chest"
 	sealableBlockWhiteList = []
+	#Multiplier on how much O2 an oxygen vent consumes per tick
+	oxygenVentConsumptionMultiplier = 1.0
+	#If true, breaking an extinguished torch will drop an extinguished torch instead of a vanilla torch
+	dropExtinguishedTorches = false
+	#Mod:Blockname  for example "minecraft:chest"
+	torchBlocks = []
 	#Maximum time in minutes that the spacesuit's internal buffer can store O2 for
 	spaceSuitO2Buffer = 30
 	#Blocks that are automatically detected as sealable but should not seal.  Format "Mod:Blockname"  for example "minecraft:chest"
 	sealableBlockBlackList = []
 	#If true, allows players being hurt due to lack of oxygen and allows effects from non-standard atmosphere types
 	EnableAtmosphericEffects = true
-	#Multiplier on how much O2 an oxygen vent consumes per tick
-	oxygenVentConsumptionMultiplier = 1.0
-	#If true, breaking an extinguished torch will drop an extinguished torch instead of a vanilla torch
-	dropExtinguishedTorches = false
 	#Amount of damage inflicted with each tick on an entity in a vacuum
 	#Range: 0 ~ 100
 	vacuumDamage = 1
@@ -125,15 +126,15 @@
 
 [Client]
 	#If true, AR will use a custom skybox on planets
-	PlanetSkyOverride = false
+	PlanetSkyOverride = true
 	#Advanced visual effects
 	advancedVFX = true
-	#If true, AR will use a custom skybox on space stations
-	StationSkyOverride = false
-	#If true, allows players to experience nausea on non-standard atmosphere types
-	EnableAtmosphericNausea = true
 	#If UI is not locked, the middle mouse can be used to drag certain AR UIs around the screen, positions are saved on hitting quit in the menu
 	lockUI = true
+	#If true, AR will use a custom skybox on space stations
+	StationSkyOverride = true
+	#If true, allows players to experience nausea on non-standard atmosphere types
+	EnableAtmosphericNausea = true
 
 [Performance]
 	#BitMask: 0: no threading, radius based; 1: threading, radius based; 2: no threading volume based; 3: threading volume based
@@ -142,84 +143,83 @@
 	oxygenVentSize = 32
 
 [Rockets]
-	#How high the rocket has to go before it reaches orbit
-	#Range: > 255
-	OrbitHeight = 1000
-	#List of fluid names for fluids that can be used as rocket monopropellants
-	rocketFuels = ["advancedrocketry:rocket_fuel;2"]
-	#List of fluid names for fluids that can be used as rocket bipropellant oxidizers
-	rocketBipropellants = ["oxygen"]
-	#Setting to false will disable the retrorockets that fire automatically on reentry on both player and automated rockets
-	autoRetroRockets = true
-	#If true, planets with higher gravity require more fuel and lower gravity would require less
-	gravityAffectsFuels = true
-	#If true, rockets will be able to actually fly around space
-	experimentalSpaceFlight = false
-	#Set to false if rockets should not require fuel to fly
-	rocketsRequireFuel = true
-	#Set to false if rockets should not be able to be fueled by and and will require a fueling station
-	canBeFueledByHand = true
-	#Multiplier for per-engine thrust
-	thrustMultiplier = 1.0
-	#Multiplier for per-tank capacity
-	fuelCapacityMultiplier = 1.0
-	#Mod:Blockname  for example "minecraft:chest"
-	rocketBlockBlackList = ["minecraft:portal", "minecraft:bedrock", "minecraft:snow_layer", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava"]
 	#Set to false if rockets should not damage blocks
 	rocketsDamageBlocks = false
+	#If true, rockets will be able to actually fly around space
+	experimentalSpaceFlight = false
+	#TBI multiplier for asteroid flights
+	asteroidTBIBurnMult = 1.0
+	#List of fluid names for fluids that can be used as rocket bipropellant oxidizers
+	rocketBipropellants = ["oxygen"]
 	#How high the rocket has to go before it reaches station clearance
 	#Range: > 255
 	stationClearanceHeight = 1000
-	#TBI multiplier for asteroid flights
-	asteroidTBIBurnMult = 1.0
 	#How long transbody injection is before the rocket can exit
 	transBodyInjection = 0
 	#TBI multiplier for warp flights
 	warpTBIBurnMult = 10.0
+	#Multiplier for per-tank capacity
+	fuelCapacityMultiplier = 1.0
+	#Mod:Blockname  for example "minecraft:chest"
+	rocketBlockBlackList = ["minecraft:portal", "minecraft:bedrock", "minecraft:snow_layer", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava"]
+	#Multiplier for per-engine thrust
+	thrustMultiplier = 1.5
+	#If true, planets with higher gravity require more fuel and lower gravity would require less
+	gravityAffectsFuels = true
+	#Set to false if rockets should not be able to be fueled by and and will require a fueling station
+	canBeFueledByHand = false
+	#How high the rocket has to go before it reaches orbit
+	#Range: > 255
+	OrbitHeight = 1000
+	#List of fluid names for fluids that can be used as rocket monopropellants
+	rocketFuels = ["thermal:refined_fuel;2"]
+	#Set to false if rockets should not require fuel to fly
+	rocketsRequireFuel = true
+	#Setting to false will disable the retrorockets that fire automatically on reentry on both player and automated rockets
+	autoRetroRockets = true
 
 ["World Generation"]
-	#Should Electric Mushrooms be able to spawn lightning
-	electricPlantsSpawnLightning = true
-	#List of block names of blocks (usally ores) allowed to spawn in geodes
-	geodeOres = ["minecraft:iron_ore", "minecraft:gold_ore", "libvulpes:orecopper", "libvulpes:oretin", "minecraft:redstone_ore"]
 	#True if the ores in geodeOres should be a blacklist
 	geodeOres_blacklist = false
-	#If true, then ore-containing geodes are generated on high pressure planets
-	generateGeodes = true
 	#average size of the geodes
 	geodeBaseSize = 36
-	#variation in geode size
-	geodeVariation = 24
+	GenerateTin = false
+	TinPerChunk = 10
+	AluminumPerClump = 16
 	#If true, then low pressure planets will have meteor craters.  Note: setting this option to false overrides 'generageCraters' in the planetDefs.xml
 	generateCraters = true
-	#If true, then very hot planets planets will volcanos.  Note: setting this option to false overrides 'generateVolcanos' in the planetDefs.xml
-	generateVolcanos = true
+	generateDilithium = false
+	#List of block names of blocks (usally ores) allowed to spawn in geodes
+	geodeOres = ["minecraft:iron_ore", "minecraft:gold_ore", "libvulpes:orecopper", "libvulpes:oretin", "minecraft:redstone_ore"]
+	RutilePerChunk = 6
+	DilithiumPerChunkLuna = 10
+	EnableOreGen = false
+	DilithiumPerClump = 16
+	IridiumPerChunk = 1
+	CopperPerChunk = 10
+	#Should Electric Mushrooms be able to spawn lightning
+	electricPlantsSpawnLightning = true
+	generateIridium = false
+	#If true, then ore-containing geodes are generated on high pressure planets
+	generateGeodes = true
+	AluminumPerChunk = 1
 	#Enable to allow structures like villages and mineshafts to generate on planets with a breathable atmosphere.  Note, setting this to false will override 'generateStructures' in the planetDefs.xml
 	generateVanillaStructures = false
-	#List of Biomes to be blacklisted from spawning as BiomeIds, default is: river, sky, hell, void, alienForest
-	BlacklistedBiomes = ["minecraft:river", "minecraft:the_end", "minecraft:badlands", "minecraft:the_void"]
 	#Biomes that only spawn on worlds with pressures over 125, will override blacklist.
 	HighPressureBiomes = []
+	GenerateCopper = false
+	#List of Biomes to be blacklisted from spawning as BiomeIds, default is: river, sky, hell, void, alienForest
+	BlacklistedBiomes = ["minecraft:river", "minecraft:the_end", "minecraft:badlands", "minecraft:the_void"]
+	RutilePerClump = 6
+	#variation in geode size
+	geodeVariation = 24
 	#Some worlds have a chance of spawning single biomes contained in this list.
 	SingleBiomes = ["minecraft:desert_hills", "minecraft:mushroom_fields", "minecraft:tall_birch_hills", "minecraft:ice_spikes"]
-	EnableOreGen = false
-	GenerateCopper = false
-	CopperPerClump = 6
-	CopperPerChunk = 10
-	GenerateTin = false
-	TinPerClump = 6
-	TinPerChunk = 10
-	generateDilithium = false
-	DilithiumPerClump = 16
+	#If true, then very hot planets planets will volcanos.  Note: setting this option to false overrides 'generateVolcanos' in the planetDefs.xml
+	generateVolcanos = false
 	DilithiumPerChunk = 1
-	DilithiumPerChunkLuna = 10
-	generateAluminum = false
-	AluminumPerClump = 16
-	AluminumPerChunk = 1
-	generateIridium = false
 	IridiumPerClump = 16
-	IridiumPerChunk = 1
+	generateAluminum = false
+	TinPerClump = 6
 	GenerateRutile = false
-	RutilePerClump = 6
-	RutilePerChunk = 6
-
+	CopperPerClump = 6
